@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CALIBER-360 AI Solutions — Healthcare AI, Strategic Intelligence, Analytics, and AI Education." />
+  <title>CALIBER-360 AI Solutions</title>
+  <style>
+    :root {
+      --navy: #0b1f33;
+      --blue: #176b9c;
+      --teal: #159a9c;
+      --ink: #182433;
+      --muted: #5e6b78;
+      --paper: #ffffff;
+      --soft: #f3f7f9;
+      --line: #dce5ea;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,.95);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+
+    nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: .04em;
+      color: var(--navy);
+      font-size: 1.08rem;
+    }
+
+    .brand span { color: var(--teal); }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      font-size: .94rem;
+      font-weight: 600;
+    }
+
+    .navlinks a {
+      text-decoration: none;
+      color: #42515e;
+    }
+
+    .navlinks a:hover { color: var(--blue); }
+
+    .hero {
+      background:
+        radial-gradient(circle at 85% 20%, rgba(21,154,156,.20), transparent 30%),
+        linear-gradient(135deg, #071827 0%, #0b2942 55%, #0d4051 100%);
+      color: white;
+      padding: 110px 0 100px;
+    }
+
+    .hero-content { max-width: 850px; }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: .78rem;
+      font-weight: 800;
+      color: #72d8d6;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 6vw, 5.2rem);
+      line-height: 1.02;
+      letter-spacing: -.045em;
+      margin: 0 0 26px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      font-size: clamp(1.08rem, 2vw, 1.35rem);
+      color: #d4e2e9;
+      margin: 0 0 34px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 20px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 750;
+      border: 1px solid transparent;
+    }
+
+    .button.primary {
+      background: #ffffff;
+      color: var(--navy);
+    }
+
+    .button.secondary {
+      border-color: rgba(255,255,255,.5);
+      color: white;
+    }
+
+    section { padding: 86px 0; }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+
+    .section-head h2 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.12;
+      letter-spacing: -.03em;
+      color: var(--navy);
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .services { background: var(--soft); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 8px 30px rgba(11,31,51,.045);
+    }
+
+    .number {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #e7f5f5;
+      color: var(--teal);
+      font-weight: 850;
+      margin-bottom: 22px;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .about-grid h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--navy);
+      margin-top: 0;
+      letter-spacing: -.03em;
+    }
+
+    .about-grid p { color: var(--muted); }
+
+    .principles {
+      border-left: 3px solid var(--teal);
+      padding-left: 28px;
+    }
+
+    .principles strong {
+      display: block;
+      color: var(--navy);
+      margin-bottom: 5px;
+    }
+
+    .principles p { margin: 0 0 24px; }
+
+    .cta {
+      background: var(--navy);
+      color: white;
+    }
+
+    .cta-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .cta h2 {
+      margin: 0 0 8px;
+      font-size: clamp(1.8rem, 4vw, 2.7rem);
+    }
+
+    .cta p {
+      margin: 0;
+      color: #c9d6de;
+    }
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--line);
+      color: #6d7984;
+      font-size: .9rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    @media (max-width: 800px) {
+      .navlinks a:not(.button) { display: none; }
+      .grid { grid-template-columns: 1fr; }
+      .about-grid { grid-template-columns: 1fr; gap: 30px; }
+      .cta-inner { flex-direction: column; align-items: flex-start; }
+      .hero { padding: 80px 0 75px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="#top">CALIBER<span>-360</span> AI SOLUTIONS</a>
+        <div class="navlinks">
+          <a href="#solutions">Solutions</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="eyebrow">Healthcare AI • Analytics • Strategic Intelligence</div>
+        <h1>Turning data and AI into better decisions.</h1>
+        <p>
+          CALIBER-360 AI Solutions helps healthcare leaders and organizations
+          translate complex data, emerging AI technologies, and market intelligence
+          into practical insight and action.
+        </p>
+        <div class="buttons">
+          <a class="button primary" href="#solutions">Explore our work</a>
+          <a class="button secondary" href="#contact">Connect with us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="solutions">
+      <div class="container">
+        <div class="section-head">
+          <h2>Where intelligence meets execution.</h2>
+          <p>
+            We focus on practical applications of artificial intelligence and analytics
+            that help organizations understand their environment, make informed decisions,
+            and build the capabilities needed for what comes next.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="number">01</div>
+            <h3>Healthcare AI & Analytics</h3>
+            <p>
+              Applied AI, predictive analytics, decision-support tools, and data-driven
+              solutions designed around real healthcare challenges.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="number">02</div>
+            <h3>Strategic Intelligence</h3>
+            <p>
+              Market, policy, financial, and competitive intelligence that turns complex
+              information into clear executive-level insight.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="number">03</div>
+            <h3>AI Education & Training</h3>
+            <p>
+              Practical AI and data science education for professionals and leaders,
+              connecting modern technology with real-world implementation.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div>
+          <div class="eyebrow" style="color:#159a9c">About CALIBER-360</div>
+          <h2>Technology is valuable when it improves the decision.</h2>
+          <p>
+            CALIBER-360 AI Solutions brings together healthcare experience, data science,
+            artificial intelligence, analytics, and strategic thinking. Our work is centered
+            on making sophisticated technology understandable, actionable, and relevant to
+            the people responsible for making consequential decisions.
+          </p>
+          <p>
+            We work at the intersection of data, technology, healthcare, and leadership —
+            with an emphasis on practical solutions rather than technology for technology's sake.
+          </p>
+        </div>
+
+        <div class="principles">
+          <p><strong>Practical AI</strong>Solutions grounded in measurable organizational needs.</p>
+          <p><strong>Decision Intelligence</strong>Move beyond dashboards toward insight, context, and action.</p>
+          <p><strong>Capability Building</strong>Help leaders and professionals understand and use AI confidently.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="container cta-inner">
+        <div>
+          <h2>Let's explore what's possible.</h2>
+          <p>Healthcare AI, strategic intelligence, analytics, education, and collaboration.</p>
+        </div>
+        <!-- Replace the email address below with your preferred business email. -->
+        <a class="button primary" href="mailto:ali.lakhani@caliber360ai.com">Contact CALIBER-360</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© 2026 CALIBER-360 AI Solutions</div>
+      <div>caliber360ai.com</div>
+    </div>
+  </footer>
+</body>
+</html>
