@@ -38,3 +38,8 @@ Open http://localhost:8000/ambulatory/ . `file://` won't work because browser fe
 - All Parquet files are publicly downloadable; only publish data approved for public release.
 - No background scraping, private data storage, login or server-side AI features.
 - Dataset refresh: replace the four Parquet files, commit, and redeploy. No code changes needed if schemas remain the same.
+
+## Pilot v1.1 fixes
+- Data Quality tab: corrected JavaScript temporal dead-zone error (`periods`).
+- Long facility names: horizontal comparison chart, expanded axis margins and automatic Plotly margins for labels.
+- After deployment, hard-refresh (Ctrl+Shift+R) to bypass browser cache.
