@@ -1,24 +1,389 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="CALIBER360 AI Solutions develops validated, explainable machine-learning models for healthcare strategy, risk stratification and decision support.">
-<title>Predictive AI & Machine Learning | CALIBER360 AI Solutions</title>
-<style>
-:root{--navy:#0a1830;--navy2:#102847;--teal:#22c7b4;--ink:#182b42;--muted:#63758a;--bg:#f5f8fb;--line:#dce5ed;--white:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);line-height:1.65;background:var(--white)}a{color:inherit}header{background:#08172c;color:#fff}.wrap{max-width:1160px;margin:auto;padding:0 28px}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-weight:800;letter-spacing:.075em;font-size:19px;text-decoration:none}.brand span{color:var(--teal)}.navlinks{display:flex;gap:25px;align-items:center;font-size:14px}.navlinks a{text-decoration:none;color:#d6e3f0}.navlinks a:hover{color:#fff}.navlinks .outline{border:1px solid #64819d;border-radius:8px;padding:9px 15px}.hero{background:radial-gradient(ellipse at 83% 24%,#184d67 0,transparent 45%),linear-gradient(125deg,#091a31,#123454);color:#fff;padding:86px 0 98px}.eyebrow{text-transform:uppercase;color:#61dfd0;letter-spacing:.17em;font-weight:750;font-size:12px}.hero h1{font-size:clamp(39px,5.2vw,65px);line-height:1.09;letter-spacing:-.04em;max-width:850px;margin:19px 0 23px}.hero p{font-size:19px;color:#c7d9e8;max-width:730px;margin:0 0 30px}.actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-block;text-decoration:none;font-weight:750;border-radius:9px;padding:12px 19px;background:var(--teal);color:#062a34}.btn.secondary{background:transparent;border:1px solid #7c9db3;color:#fff}.section{padding:78px 0}.section.alt{background:var(--bg)}.section h2{font-size:clamp(29px,3.3vw,41px);letter-spacing:-.035em;line-height:1.18;margin:12px 0 17px}.lead{color:var(--muted);font-size:17px;max-width:800px;margin:0 0 35px}.kicker{color:#087e78;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.14em}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid var(--line);border-radius:15px;padding:26px;box-shadow:0 7px 22px rgba(10,35,60,.035)}.card h3{font-size:18px;margin:0 0 10px}.card p{font-size:15px;color:var(--muted);margin:0}.card .num{font-size:43px;font-weight:800;letter-spacing:-.045em;color:#0c4255;line-height:1.2;margin:7px 0}.card .small{font-size:13px;color:var(--muted)}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}.metric{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px}.metric strong{display:block;font-size:36px;color:#0d465b;letter-spacing:-.04em}.metric span{font-size:13px;color:var(--muted)}.case-head{display:flex;justify-content:space-between;align-items:start;gap:20px}.pill{display:inline-block;border-radius:30px;padding:7px 12px;font-size:12px;background:#dff5f1;color:#11685f;font-weight:800}.two{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}.two p{color:#53667a}.chart{background:white;border:1px solid var(--line);border-radius:15px;padding:28px}.chart h3{margin:0 0 5px}.chart .sub{color:var(--muted);font-size:13px;margin:0 0 25px}.barrow{display:grid;grid-template-columns:115px 1fr 62px;gap:12px;align-items:center;margin:20px 0;font-size:14px}.track{height:20px;background:#e7eef3;border-radius:5px;overflow:hidden}.fill{height:100%;background:linear-gradient(90deg,#0b7184,#20b8aa);border-radius:5px}.barrow strong{text-align:right}.note{font-size:13px;color:var(--muted);margin-top:22px}.steps{counter-reset:steps;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.step{padding:24px;border:1px solid var(--line);border-radius:13px;background:#fff}.step:before{counter-increment:steps;content:counter(steps,decimal-leading-zero);display:block;color:#0b958b;font-size:13px;font-weight:800;margin-bottom:12px}.step h3{margin:0 0 8px;font-size:17px}.step p{margin:0;color:var(--muted);font-size:14px}.callout{background:#102c48;color:#fff;padding:35px;border-radius:17px}.callout h3{font-size:24px;margin:0 0 12px}.callout p{color:#d3e2ed;margin:0}.limitations{border-left:4px solid #16a89c;background:#f0f8f7;padding:20px 25px;border-radius:0 10px 10px 0;color:#355c66;font-size:14px}.cta{background:linear-gradient(115deg,#0a213b,#10475a);color:white;text-align:center;padding:72px 20px}.cta h2{font-size:37px;line-height:1.2;margin:0 0 15px}.cta p{color:#c6dce8;max-width:660px;margin:0 auto 26px}footer{background:#07172b;color:#9eb2c5;padding:28px 0;font-size:13px}footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}footer a{color:#c6dce8}@media(max-width:850px){.metrics{grid-template-columns:repeat(2,1fr)}.grid,.steps{grid-template-columns:repeat(2,1fr)}.two{grid-template-columns:1fr}.navlinks{gap:12px}}@media(max-width:600px){.wrap{padding:0 20px}.hero{padding:65px 0}.nav{height:auto;padding:20px 0;align-items:start}.navlinks{flex-wrap:wrap;justify-content:end}.navlinks a:nth-child(2){display:none}.grid,.steps,.metrics{grid-template-columns:1fr}.section{padding:58px 0}.barrow{grid-template-columns:85px 1fr 55px;gap:7px;font-size:12px}}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CALIBER-360 AI Solutions — Healthcare AI, Strategic Intelligence, Analytics, and AI Education." />
+  <title>CALIBER-360 AI Solutions</title>
+  <style>
+    :root {
+      --navy: #0b1f33;
+      --blue: #176b9c;
+      --teal: #159a9c;
+      --ink: #182433;
+      --muted: #5e6b78;
+      --paper: #ffffff;
+      --soft: #f3f7f9;
+      --line: #dce5ea;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,.95);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+
+    nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: .04em;
+      color: var(--navy);
+      font-size: 1.08rem;
+    }
+
+    .brand span { color: var(--teal); }
+
+    .navlinks {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      font-size: .94rem;
+      font-weight: 600;
+    }
+
+    .navlinks a {
+      text-decoration: none;
+      color: #42515e;
+    }
+
+    .navlinks a:hover { color: var(--blue); }
+
+    .hero {
+      background:
+        radial-gradient(circle at 85% 20%, rgba(21,154,156,.20), transparent 30%),
+        linear-gradient(135deg, #071827 0%, #0b2942 55%, #0d4051 100%);
+      color: white;
+      padding: 110px 0 100px;
+    }
+
+    .hero-content { max-width: 850px; }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: .78rem;
+      font-weight: 800;
+      color: #72d8d6;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 6vw, 5.2rem);
+      line-height: 1.02;
+      letter-spacing: -.045em;
+      margin: 0 0 26px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      font-size: clamp(1.08rem, 2vw, 1.35rem);
+      color: #d4e2e9;
+      margin: 0 0 34px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 20px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 750;
+      border: 1px solid transparent;
+    }
+
+    .button.primary {
+      background: #ffffff;
+      color: var(--navy);
+    }
+
+    .button.secondary {
+      border-color: rgba(255,255,255,.5);
+      color: white;
+    }
+
+    section { padding: 86px 0; }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+
+    .section-head h2 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.12;
+      letter-spacing: -.03em;
+      color: var(--navy);
+    }
+
+    .section-head p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .services { background: var(--soft); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 8px 30px rgba(11,31,51,.045);
+    }
+
+    .number {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #e7f5f5;
+      color: var(--teal);
+      font-weight: 850;
+      margin-bottom: 22px;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      color: var(--navy);
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .about-grid h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--navy);
+      margin-top: 0;
+      letter-spacing: -.03em;
+    }
+
+    .about-grid p { color: var(--muted); }
+
+    .principles {
+      border-left: 3px solid var(--teal);
+      padding-left: 28px;
+    }
+
+    .principles strong {
+      display: block;
+      color: var(--navy);
+      margin-bottom: 5px;
+    }
+
+    .principles p { margin: 0 0 24px; }
+
+    .cta {
+      background: var(--navy);
+      color: white;
+    }
+
+    .cta-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .cta h2 {
+      margin: 0 0 8px;
+      font-size: clamp(1.8rem, 4vw, 2.7rem);
+    }
+
+    .cta p {
+      margin: 0;
+      color: #c9d6de;
+    }
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--line);
+      color: #6d7984;
+      font-size: .9rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    @media (max-width: 800px) {
+      .navlinks a:not(.button) { display: none; }
+      .grid { grid-template-columns: 1fr; }
+      .about-grid { grid-template-columns: 1fr; gap: 30px; }
+      .cta-inner { flex-direction: column; align-items: flex-start; }
+      .hero { padding: 80px 0 75px; }
+    }
+  </style>
 </head>
+
 <body>
-<header><div class="wrap nav"><a class="brand" href="/">CALIBER<span>360</span> <small style="font-size:10px;font-weight:500;letter-spacing:.05em">AI SOLUTIONS</small></a><nav class="navlinks" aria-label="Primary"><a href="/">Home</a><a href="/ambulatory/">Ambulatory Intelligence</a><a class="outline" href="#contact">Connect</a></nav></div></header>
-<main>
-<section class="hero"><div class="wrap"><div class="eyebrow">Healthcare analytics · Predictive intelligence</div><h1>From healthcare data to decisions that matter.</h1><p>We build interpretable, rigorously validated machine-learning solutions that help healthcare leaders identify risk, focus resources, and turn complex data into actionable intelligence.</p><div class="actions"><a class="btn" href="#case-study">Explore the case study ↓</a><a class="btn secondary" href="#capabilities">Our capabilities</a></div></div></section>
-<section id="capabilities" class="section"><div class="wrap"><div class="kicker">What we deliver</div><h2>End-to-end predictive AI, grounded in real healthcare data.</h2><p class="lead">Model development is only one part of the work. Reliable healthcare AI demands trustworthy data, credible validation, transparent interpretation, and a clear operational use case.</p><div class="grid"><article class="card"><h3>Data integrity & provenance</h3><p>Audit source cohorts, identify overlap and leakage, evaluate missingness, and verify that training and validation populations are truly independent.</p></article><article class="card"><h3>Predictive modeling</h3><p>Develop and compare statistical and machine-learning models using defensible cross-validation and carefully controlled tuning.</p></article><article class="card"><h3>External validation</h3><p>Test generalization across different patient populations, outcome prevalences, and clinical environments.</p></article><article class="card"><h3>Explainable AI</h3><p>Use feature-level interpretation, including SHAP, to understand what drives model scores and investigate unexpected patterns.</p></article><article class="card"><h3>Risk prioritization</h3><p>Translate model outputs into practical targeting strategies, including high-risk segments, event capture, and cumulative lift.</p></article><article class="card"><h3>Responsible deployment</h3><p>Evaluate calibration, population drift, fairness considerations, and the limits of what a model can reliably claim.</p></article></div></div></section>
-<section id="case-study" class="section alt"><div class="wrap"><div class="case-head"><div><div class="kicker">Featured analytical case study</div><h2>Development and External Validation of a Machine-Learning Model for Prospective Healthcare Risk Stratification</h2></div><span class="pill">Research example</span></div><p class="lead">A complete modeling workflow—from discovering hidden cohort overlap to demonstrating meaningful risk concentration in an independent healthcare population.</p><div class="metrics"><div class="metric"><strong>19,809</strong><span>Patients in external validation</span></div><div class="metric"><strong>0.829</strong><span>External AUROC</span></div><div class="metric"><strong>5.31×</strong><span>AUPRC relative to prevalence baseline</span></div><div class="metric"><strong>147</strong><span>Predictors retained after audit</span></div></div></div></section>
-<section class="section"><div class="wrap two"><div><div class="kicker">The executive takeaway</div><h2>Focus attention where the events are concentrated.</h2><p>In an independent validation cohort, the model ranked patients by their relative likelihood of the target outcome. The top-scoring 10% of patients accounted for nearly half of all observed events.</p><p>For a resource-constrained care-management or population-health program, this illustrates the potential value of using predictive intelligence to prioritize outreach and evaluation. The analysis demonstrates targeting performance—not a measured reduction in events or a proven intervention benefit.</p><div class="limitations"><strong>Important distinction:</strong> These are relative risk rankings, not calibrated absolute probabilities. The model's raw probability outputs require additional population-appropriate calibration before being used as individual event-risk estimates.</div></div><div class="chart" role="img" aria-label="Cumulative observed events captured by the highest risk-scored patients: top 10 percent captures 49.9 percent of events, top 20 percent captures 67.8 percent, top 30 percent captures 79.2 percent."><h3>How much risk is concentrated?</h3><p class="sub">Share of observed events captured in external validation</p><div class="barrow"><span>Top 10%</span><div class="track"><div class="fill" style="width:49.9%"></div></div><strong>49.9%</strong></div><div class="barrow"><span>Top 20%</span><div class="track"><div class="fill" style="width:67.8%"></div></div><strong>67.8%</strong></div><div class="barrow"><span>Top 30%</span><div class="track"><div class="fill" style="width:79.2%"></div></div><strong>79.2%</strong></div><div class="barrow"><span>Top 40%</span><div class="track"><div class="fill" style="width:85.4%"></div></div><strong>85.4%</strong></div><div class="barrow"><span>Top 50%</span><div class="track"><div class="fill" style="width:89.8%"></div></div><strong>89.8%</strong></div><p class="note">Observed outcomes in Dataset C (n = 19,809; 814 events; 4.11% prevalence). Bars represent cumulative capture, not predicted probability.</p></div></div></section>
-<section class="section alt"><div class="wrap"><div class="kicker">Why this case study matters</div><h2>Rigor behind the headline metrics.</h2><div class="steps"><div class="step"><h3>Audit the cohorts</h3><p>Found 3,000 overlapping records between development Dataset A and proposed test Dataset B—an issue that could otherwise inflate performance.</p></div><div class="step"><h3>Protect independent testing</h3><p>Excluded the overlapping dataset and reserved Dataset C for external validation, with no exact feature-level overlap with A.</p></div><div class="step"><h3>Build and compare</h3><p>Evaluated logistic regression and XGBoost with stratified cross-validation and out-of-fold predictions.</p></div><div class="step"><h3>Validate transportability</h3><p>Achieved external AUROC of 0.829 versus internal out-of-fold AUROC of 0.850 despite substantial population differences.</p></div><div class="step"><h3>Explain the predictions</h3><p>Used SHAP to identify major drivers, including age, chronic conditions, medication burden, prior utilization and healthcare engagement.</p></div><div class="step"><h3>Challenge assumptions</h3><p>Detected an unusual pediatric sampling pattern and assessed an adult-only model as a clearly labeled post-hoc sensitivity analysis.</p></div></div></div></section>
-<section class="section"><div class="wrap two"><div><div class="kicker">Analytical results</div><h2>Discrimination is strong. Calibration needs work.</h2><p>The XGBoost model achieved an external <strong>AUROC of 0.8293</strong> and <strong>AUPRC of 0.2183</strong>, compared with a 4.11% outcome prevalence. An adult-only sensitivity analysis yielded similar results (AUROC 0.8312; AUPRC 0.2252).</p><p>However, the balanced training sample led to materially overstated absolute probabilities in the lower-prevalence external cohort. That finding is central to the study: strong ranking ability does not automatically make a model ready to report individual clinical probabilities.</p></div><div class="callout"><h3>What responsible AI looks like in practice</h3><p>We do not stop at an impressive accuracy statistic. We test whether the data are independent, whether patterns generalize, whether model scores can be interpreted safely, and whether the output matches the decision a healthcare organization actually needs to make.</p></div></div></section>
-<section class="section alt"><div class="wrap"><div class="kicker">Research transparency</div><h2>What the example demonstrates—and what it does not.</h2><p class="lead">This is a methodological case study using three healthcare datasets. The exact original clinical definition and prediction horizon of the variable <code>FINAL_OUTCOME</code> have not yet been verified, so the outcome is intentionally described generically. The model has not been presented here as a deployed clinical tool, and no intervention effectiveness is claimed.</p><div class="limitations">The adult-only model was examined after the primary external evaluation and is a post-hoc sensitivity analysis—not a second untouched external validation. Before operational deployment, additional work would include formal target-definition confirmation, representative probability calibration, subgroup/fairness assessment, and prospective validation.</div></div></section>
-<section id="contact" class="cta"><div class="wrap"><div class="eyebrow">Let's make healthcare data actionable</div><h2>Have a healthcare prediction challenge?</h2><p>From exploratory cohort analysis to externally validated risk models and executive decision tools, CALIBER360 AI Solutions can help connect advanced analytics with practical strategy.</p><a class="btn" href="mailto:info@caliber360ai.com?subject=Healthcare%20Predictive%20AI%20Inquiry">Start a conversation</a><p style="font-size:12px;margin-top:17px">Email address is a placeholder; replace with your preferred business contact before publishing.</p></div></section>
-</main><footer><div class="wrap"><span>© <span id="year">2026</span> CALIBER360 AI Solutions. All rights reserved.</span><span><a href="/">Home</a> · <a href="/ambulatory/">Ambulatory Intelligence</a></span></div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body></html>
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="#top">CALIBER<span>-360</span> AI SOLUTIONS</a>
+        <div class="navlinks">
+          <a href="#solutions">Solutions</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="eyebrow">Healthcare AI • Analytics • Strategic Intelligence</div>
+        <h1>Turning data and AI into better decisions.</h1>
+        <p>
+          CALIBER-360 AI Solutions helps healthcare leaders and organizations
+          translate complex data, emerging AI technologies, and market intelligence
+          into practical insight and action.
+        </p>
+        <div class="buttons">
+          <a class="button primary" href="#solutions">Explore our work</a>
+          <a class="button secondary" href="#contact">Connect with us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="solutions">
+      <div class="container">
+        <div class="section-head">
+          <h2>Where intelligence meets execution.</h2>
+          <p>
+            We focus on practical applications of artificial intelligence and analytics
+            that help organizations understand their environment, make informed decisions,
+            and build the capabilities needed for what comes next.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="number">01</div>
+            <h3>Healthcare AI & Analytics</h3>
+            <p>
+              Applied AI, predictive analytics, decision-support tools, and data-driven
+              solutions designed around real healthcare challenges.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="number">02</div>
+            <h3>Strategic Intelligence</h3>
+            <p>
+              Market, policy, financial, and competitive intelligence that turns complex
+              information into clear executive-level insight.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="number">03</div>
+            <h3>AI Education & Training</h3>
+            <p>
+              Practical AI and data science education for professionals and leaders,
+              connecting modern technology with real-world implementation.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-grid">
+        <div>
+          <div class="eyebrow" style="color:#159a9c">About CALIBER-360</div>
+          <h2>Technology is valuable when it improves the decision.</h2>
+          <p>
+            CALIBER-360 AI Solutions brings together healthcare experience, data science,
+            artificial intelligence, analytics, and strategic thinking. Our work is centered
+            on making sophisticated technology understandable, actionable, and relevant to
+            the people responsible for making consequential decisions.
+          </p>
+          <p>
+            We work at the intersection of data, technology, healthcare, and leadership —
+            with an emphasis on practical solutions rather than technology for technology's sake.
+          </p>
+        </div>
+
+        <div class="principles">
+          <p><strong>Practical AI</strong>Solutions grounded in measurable organizational needs.</p>
+          <p><strong>Decision Intelligence</strong>Move beyond dashboards toward insight, context, and action.</p>
+          <p><strong>Capability Building</strong>Help leaders and professionals understand and use AI confidently.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <div class="container cta-inner">
+        <div>
+          <h2>Let's explore what's possible.</h2>
+          <p>Healthcare AI, strategic intelligence, analytics, education, and collaboration.</p>
+        </div>
+        <!-- Replace the email address below with your preferred business email. -->
+        <a class="button primary" href="mailto:ali.lakhani@caliber360ai.com">Contact CALIBER-360</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>© 2026 CALIBER-360 AI Solutions</div>
+      <div>caliber360ai.com</div>
+    </div>
+  </footer>
+</body>
+</html>
