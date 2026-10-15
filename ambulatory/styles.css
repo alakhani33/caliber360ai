@@ -5,3 +5,6 @@
 
 /* V5.4 executive opportunity preview */
 .exec-opportunity{border:1px solid #d8e8f0;border-radius:12px;padding:18px;margin-top:20px;background:#f8fbfd}.exec-opportunity-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.exec-opportunity-head h3{margin:0}.exec-opportunity-head .sub{margin:6px 0}.exec-opportunity table{margin-top:10px}.exec-opportunity .action{font-weight:700}
+
+/* V5.6 market signals */
+.exec-signals{border:1px solid #d8e8f0;border-radius:12px;padding:18px;margin-top:20px;background:#fff}.exec-signals h3{margin:0}.exec-signals .sub{margin:6px 0}.signal-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:14px}.signal-item{border:1px solid #dce8f0;border-radius:10px;padding:15px;background:#f8fbfd;min-width:0}.signal-item h4{font-size:14px;margin:12px 0 7px}.signal-item p{font-size:12px;line-height:1.6;color:#4b657a;min-height:48px}.signal-top{display:flex;justify-content:space-between;gap:8px;align-items:center}.signal-type{font-size:10px;font-weight:800;letter-spacing:.5px;color:#155276;text-transform:uppercase}.signal-period{font-size:11px;color:#698194}.signal-item .action{margin-top:6px;font-size:12px}
