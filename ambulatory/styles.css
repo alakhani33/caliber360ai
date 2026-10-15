@@ -8,3 +8,21 @@
 
 /* V5.6 market signals */
 .exec-signals{border:1px solid #d8e8f0;border-radius:12px;padding:18px;margin-top:20px;background:#fff}.exec-signals h3{margin:0}.exec-signals .sub{margin:6px 0}.signal-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:14px}.signal-item{border:1px solid #dce8f0;border-radius:10px;padding:15px;background:#f8fbfd;min-width:0}.signal-item h4{font-size:14px;margin:12px 0 7px}.signal-item p{font-size:12px;line-height:1.6;color:#4b657a;min-height:48px}.signal-top{display:flex;justify-content:space-between;gap:8px;align-items:center}.signal-type{font-size:10px;font-weight:800;letter-spacing:.5px;color:#155276;text-transform:uppercase}.signal-period{font-size:11px;color:#698194}.signal-item .action{margin-top:6px;font-size:12px}
+
+/* V5.7 executive briefing and analyst exports */
+.data-vintage{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:14px 0 18px;color:#466378;font-size:12px}
+.data-vintage span{background:#f0f5f8;border:1px solid #dce7ee;border-radius:6px;padding:7px 10px}
+.data-vintage .action{margin-left:auto}
+.exec-signals{background:#f7fafc;border-color:#c9dce8;margin-top:14px}
+.exec-signals .signal-item{background:white}
+.signal-list{grid-template-columns:repeat(auto-fit,minmax(285px,1fr))}
+.signal-top{flex-wrap:wrap}.signal-priority{border:1px solid #cbdce6;border-radius:5px;padding:4px 7px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.35px}
+.priority-investigate{color:#8b4217;background:#fff4e8;border-color:#f1d7ba}
+.priority-monitor{color:#245d79;background:#eaf5fb;border-color:#cfe5f0}
+.priority-screen{color:#4c5970;background:#f2f4f8;border-color:#e0e5ec}
+.signal-item p{min-height:0;margin:9px 0;line-height:1.55}.signal-item p strong{color:#203b53}
+.data-guide{border:1px solid #d6e5ee;border-radius:10px;padding:16px;margin:16px 0;background:#f8fbfd;font-size:13px;line-height:1.6}
+.data-guide[hidden]{display:none}.csv-export{margin:12px 0 2px;font-weight:700}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #5ba8ce;outline-offset:2px}
+@media(max-width:650px){.signal-list{grid-template-columns:1fr}.data-vintage .action{margin-left:0}.exec-head .controls{width:100%}}
+@media print{.data-vintage button,.csv-export{display:none!important}}
