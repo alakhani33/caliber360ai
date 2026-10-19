@@ -87,6 +87,19 @@ h1{font-size:clamp(42px,5.4vw,65px);margin:14px 0 14px;line-height:1.06}
 .cycle-step{font-size:clamp(11px,1.4vw,15px);padding:11px 6px}
 @media(max-width:600px){.cycle-flow{flex-wrap:wrap;justify-content:center;gap:6px}.cycle-step{flex:0 1 auto;min-width:82px;padding:9px 8px;font-size:12px}.cycle-arrow{font-size:15px}}
 </style>
+
+<style>
+/* Keep the five-stage pipeline on a single row on phones. */
+.intelligence-cycle{max-width:100%;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:#64d8cc transparent}
+.cycle-flow{display:flex;flex-wrap:nowrap!important;justify-content:flex-start!important;width:max-content;min-width:100%;gap:6px}
+.cycle-step{flex:1 0 auto;white-space:nowrap;min-width:0}
+.cycle-arrow{flex:0 0 auto}
+@media(max-width:600px){
+  .cycle-flow{gap:4px}
+  .cycle-step{flex:0 0 auto;min-width:0!important;padding:8px 7px;font-size:11px}
+  .cycle-arrow{font-size:13px}
+}
+</style>
 </head>
 <body>
 <header>
