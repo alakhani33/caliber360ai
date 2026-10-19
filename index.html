@@ -79,6 +79,13 @@ h1{font-size:clamp(42px,5.4vw,65px);margin:14px 0 14px;line-height:1.06}
  .cycle-feedback{font-size:11px}
  .intelligence-cycle{margin:18px 0 20px}
 }
+
+/* Five-stage decision pipeline: final result is emphasized */
+.intelligence-cycle{max-width:920px;margin:19px 0 23px}
+.cycle-result{background:rgba(100,216,204,.25)!important;border-color:#7ce0d4!important;color:#ffffff!important}
+.cycle-flow{gap:7px}
+.cycle-step{font-size:clamp(11px,1.4vw,15px);padding:11px 6px}
+@media(max-width:600px){.cycle-flow{flex-wrap:wrap;justify-content:center;gap:6px}.cycle-step{flex:0 1 auto;min-width:82px;padding:9px 8px;font-size:12px}.cycle-arrow{font-size:15px}}
 </style>
 </head>
 <body>
@@ -117,21 +124,14 @@ h1{font-size:clamp(42px,5.4vw,65px);margin:14px 0 14px;line-height:1.06}
 <p class="hero-sub">
        Strategic intelligence. Advanced analytics. Applied AI.
       </p>
-
-<div aria-label="Data to hindsight to insight to foresight, with feedback returning to data" class="intelligence-cycle">
+<div aria-label="Data to hindsight to insight to foresight to smarter decisions" class="intelligence-cycle">
 <div class="cycle-flow">
 <span class="cycle-step">Data</span><span aria-hidden="true" class="cycle-arrow">→</span>
 <span class="cycle-step">Hindsight</span><span aria-hidden="true" class="cycle-arrow">→</span>
 <span class="cycle-step">Insight</span><span aria-hidden="true" class="cycle-arrow">→</span>
-<span class="cycle-step">Foresight</span>
+<span class="cycle-step">Foresight</span><span aria-hidden="true" class="cycle-arrow">→</span><span class="cycle-step cycle-result">Smarter Decisions</span>
 </div>
-<div aria-label="Feedback loops back to data" class="cycle-feedback">
-<svg aria-hidden="true" preserveaspectratio="none" viewbox="0 0 740 25">
-<path d="M 710 1 V 9 Q 710 16 702 16 H 28 Q 18 16 18 8 V 3" fill="none" stroke="#64d8cc" stroke-dasharray="5 4" stroke-width="1.5"></path>
-<path d="M 12 8 L 18 1 L 24 8" fill="none" stroke="#64d8cc" stroke-width="1.5"></path>
-</svg>
-<span style="white-space:nowrap">Feedback loop</span>
-</div>
+
 </div>
 <div class="actions">
 <a class="btn btn-gold" href="#capabilities">
