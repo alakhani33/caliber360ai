@@ -86,8 +86,14 @@ h1{font-size:clamp(42px,5.4vw,65px);margin:14px 0 14px;line-height:1.06}
 .cycle-flow{gap:7px}
 .cycle-step{font-size:clamp(11px,1.4vw,15px);padding:11px 6px}
 @media(max-width:600px){.cycle-flow{flex-wrap:wrap;justify-content:center;gap:6px}.cycle-step{flex:0 1 auto;min-width:82px;padding:9px 8px;font-size:12px}.cycle-arrow{font-size:15px}}
-</style>
 
+/* Compact decision map: branching Five Ws integrated in the flow */
+.decision-map{width:100%;max-width:1050px;margin:18px 0 22px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:#64d8cc transparent}
+.decision-map svg{display:block;width:100%;min-width:720px;height:auto}
+.hero-inner{max-width:1100px;padding-top:56px;padding-bottom:61px}
+.hero-sub{margin-bottom:10px}
+@media(max-width:720px){.decision-map svg{min-width:720px}.hero-inner{padding-top:55px;padding-bottom:58px}}
+</style>
 <style>
 /* Keep the five-stage pipeline on a single row on phones. */
 .intelligence-cycle{max-width:100%;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:#64d8cc transparent}
@@ -133,18 +139,51 @@ h1{font-size:clamp(42px,5.4vw,65px);margin:14px 0 14px;line-height:1.06}
        <span>
         complexity.
        </span>
-</h1><p aria-label="The CALIBER360 approach: the five Ws" class="hero-five-ws" id="approach">Why?  What?  Who?  When?  Where?</p>
+</h1>
 <p class="hero-sub">
        Strategic intelligence. Advanced analytics. Applied AI.
       </p>
-<div aria-label="Data to hindsight to insight to foresight to smarter decisions" class="intelligence-cycle">
-<div class="cycle-flow">
-<span class="cycle-step">Data</span><span aria-hidden="true" class="cycle-arrow">→</span>
-<span class="cycle-step">Hindsight</span><span aria-hidden="true" class="cycle-arrow">→</span>
-<span class="cycle-step">Insight</span><span aria-hidden="true" class="cycle-arrow">→</span>
-<span class="cycle-step">Foresight</span><span aria-hidden="true" class="cycle-arrow">→</span><span class="cycle-step cycle-result">Smarter Decisions</span>
-</div>
-
+<div aria-label="Data flows to Hindsight, Insight, and Foresight. Foresight branches into five questions: Why, What, Who, When, and Where. All five lead to Smarter Decisions." class="decision-map" id="approach" role="img">
+<svg aria-hidden="true" viewbox="0 0 1100 245" xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="arrowhead" markerheight="5" markerwidth="5" orient="auto-start-reverse" refx="9" refy="5" viewbox="0 0 10 10"><path d="M0 0 L10 5 L0 10 Z" fill="#64d8cc"></path></marker></defs>
+<!-- first stages -->
+<g fill="#173a50" stroke="#64d8cc" stroke-width="1.4">
+<rect height="48" rx="7" width="118" x="12" y="95"></rect>
+<rect height="48" rx="7" width="132" x="170" y="95"></rect>
+<rect height="48" rx="7" width="118" x="342" y="95"></rect>
+<rect height="48" rx="7" width="126" x="500" y="95"></rect>
+</g>
+<g fill="#fff" font-family="Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle">
+<text x="71" y="125">Data</text><text x="236" y="125">Hindsight</text><text x="401" y="125">Insight</text><text x="563" y="125">Foresight</text>
+</g>
+<g fill="none" marker-end="url(#arrowhead)" stroke="#64d8cc" stroke-width="2">
+<path d="M130 119 H165"></path><path d="M302 119 H337"></path><path d="M460 119 H495"></path>
+</g>
+<!-- Five Ws, stacked after foresight -->
+<g fill="#1b4858" stroke="#64d8cc" stroke-width="1.3">
+<rect height="38" rx="6" width="105" x="696" y="5"></rect>
+<rect height="38" rx="6" width="105" x="696" y="54"></rect>
+<rect height="38" rx="6" width="105" x="696" y="103"></rect>
+<rect height="38" rx="6" width="105" x="696" y="152"></rect>
+<rect height="38" rx="6" width="105" x="696" y="201"></rect>
+</g>
+<g fill="#a9f0e6" font-family="Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">
+<text x="748.5" y="30">Why?</text><text x="748.5" y="79">What?</text><text x="748.5" y="128">Who?</text><text x="748.5" y="177">When?</text><text x="748.5" y="226">Where?</text>
+</g>
+<!-- branch from foresight to all five Ws -->
+<g fill="none" opacity=".8" stroke="#64d8cc" stroke-width="1.5">
+<path d="M626 119 H659"></path><path d="M659 24 V220"></path>
+<path d="M659 24 H691"></path><path d="M659 73 H691"></path><path d="M659 122 H691"></path><path d="M659 171 H691"></path><path d="M659 220 H691"></path>
+</g>
+<!-- converge toward the outcome -->
+<g fill="none" opacity=".8" stroke="#64d8cc" stroke-width="1.5">
+<path d="M801 24 H838"></path><path d="M801 73 H838"></path><path d="M801 122 H838"></path><path d="M801 171 H838"></path><path d="M801 220 H838"></path>
+<path d="M838 24 V220"></path>
+</g>
+<path d="M838 122 H870" fill="none" marker-end="url(#arrowhead)" stroke="#64d8cc" stroke-width="2"></path>
+<rect fill="#24666c" height="56" rx="8" stroke="#7ce0d4" stroke-width="2" width="211" x="875" y="94"></rect>
+<text fill="#fff" font-family="Arial, sans-serif" font-size="19" font-weight="700" text-anchor="middle" x="980.5" y="127">Smarter Decisions</text>
+</svg>
 </div>
 <div class="actions">
 <a class="btn btn-gold" href="#capabilities">
