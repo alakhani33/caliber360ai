@@ -93,6 +93,12 @@ h1{font-size:clamp(42px,5.4vw,65px);margin:14px 0 14px;line-height:1.06}
 .hero-inner{max-width:1100px;padding-top:56px;padding-bottom:61px}
 .hero-sub{margin-bottom:10px}
 @media(max-width:720px){.decision-map svg{min-width:720px}.hero-inner{padding-top:55px;padding-bottom:58px}}
+
+/* Navigation links remain available on smaller screens. */
+.navlinks{gap:clamp(10px,1.6vw,24px);flex-wrap:wrap;justify-content:flex-end}
+.navlinks a{white-space:nowrap}
+@media(max-width:900px){.nav{align-items:flex-start;flex-direction:column;padding:16px 0;gap:14px}.navlinks{justify-content:flex-start;gap:10px 18px}.navlinks a{font-size:12px}}
+@media(max-width:720px){.navlinks a:not(.nav-contact){display:inline-flex}.navlinks{width:100%;gap:12px 16px}.nav-contact{padding:7px 12px}}
 </style>
 <style>
 /* Keep the five-stage pipeline on a single row on phones. */
@@ -119,15 +125,7 @@ h1{font-size:clamp(42px,5.4vw,65px);margin:14px 0 14px;line-height:1.06}
       AI SOLUTIONS
      </small>
 </a>
-<nav aria-label="Main navigation" class="navlinks">
-<a href="#capabilities">
-      Capabilities
-     </a>
-<a href="#approach">Our Approach</a>
-<a class="nav-contact" href="mailto:ali.lakhani@caliber360ai.com?subject=CALIBER360%20Inquiry">
-      Contact ↗
-     </a>
-</nav>
+<nav aria-label="Main navigation" class="navlinks"><a href="/ambulatory/">Strategic Intel</a><a href="/ml/">Predictive Analytics</a><a href="/patient-experience/">Customer &amp; Patient Experience</a><a href="/training/">Data &amp; AI Training</a><a href="/about/">About</a><a class="nav-contact" href="mailto:ali.lakhani@caliber360ai.com?subject=CALIBER360%20Inquiry">Contact ↗</a></nav>
 </div>
 </header>
 <main>
