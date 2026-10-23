@@ -111,6 +111,36 @@ h1{font-size:clamp(42px,5.4vw,65px);margin:14px 0 14px;line-height:1.06}
   .cycle-step{flex:0 0 auto;min-width:0!important;padding:8px 7px;font-size:11px}
   .cycle-arrow{font-size:13px}
 }
+
+/* Responsive header and decision journey */
+@media (max-width: 1000px) {
+  .nav {flex-direction:column;align-items:stretch;gap:12px;padding:14px 0}
+  .navlinks {display:flex;flex-wrap:wrap;justify-content:flex-start;gap:7px 9px;width:100%}
+  .navlinks a {display:inline-flex!important;align-items:center;white-space:normal;font-size:12px;line-height:1.25;padding:9px 11px;border:1px solid var(--line);border-radius:6px;background:#f8fbfc}
+  .navlinks .nav-contact {background:#fff;border-color:#bdcbd4}
+}
+@media (max-width: 600px) {
+  .wrap {width:calc(100% - 32px)}
+  .navlinks {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .navlinks a {justify-content:center;text-align:center;min-width:0;min-height:43px;font-size:11.5px;padding:8px 6px}
+  .navlinks a:nth-child(3) {font-size:11px}
+  .brand {font-size:27px}
+  .hero-inner {padding-top:42px;padding-bottom:48px}
+  h1 {font-size:clamp(39px,10vw,52px)}
+  .decision-map {overflow:visible;margin:18px 0 24px}
+  .decision-map svg {display:none}
+  .mobile-journey {display:block}
+  .mobile-stages {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .mobile-stage {padding:11px 8px;text-align:center;border:1px solid #64d8cc;border-radius:6px;background:#173a50;color:#fff;font-size:14px;font-weight:650}
+  .mobile-stage:last-child {grid-column:1/-1}
+  .mobile-journey-label {text-align:center;color:#a9f0e6;font-size:12px;margin:12px 0 8px;font-weight:700}
+  .mobile-questions {display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
+  .mobile-questions span {border:1px solid #64d8cc;border-radius:5px;background:#1b4858;color:#a9f0e6;padding:7px 10px;font-size:12px;font-weight:700}
+  .mobile-result {text-align:center;margin-top:12px;border:2px solid #7ce0d4;background:#24666c;border-radius:7px;padding:13px 8px;font-weight:750}
+  .mobile-journey-arrow {text-align:center;color:#7ce0d4;font-size:19px;line-height:1.4}
+}
+.mobile-journey {display:none}
+@media (max-width:600px){.mobile-journey{display:block}}
 </style>
 </head>
 <body>
@@ -182,6 +212,14 @@ h1{font-size:clamp(42px,5.4vw,65px);margin:14px 0 14px;line-height:1.06}
 <rect fill="#24666c" height="56" rx="8" stroke="#7ce0d4" stroke-width="2" width="211" x="875" y="94"></rect>
 <text fill="#fff" font-family="Arial, sans-serif" font-size="19" font-weight="700" text-anchor="middle" x="980.5" y="127">Smarter Decisions</text>
 </svg>
+<div class="mobile-journey" aria-hidden="true">
+  <div class="mobile-stages"><div class="mobile-stage">Data</div><div class="mobile-stage">Hindsight</div><div class="mobile-stage">Insight</div><div class="mobile-stage">Foresight</div></div>
+  <div class="mobile-journey-arrow">↓</div>
+  <div class="mobile-journey-label">The five questions that guide decisions</div>
+  <div class="mobile-questions"><span>Why?</span><span>What?</span><span>Who?</span><span>When?</span><span>Where?</span></div>
+  <div class="mobile-journey-arrow">↓</div>
+  <div class="mobile-result">Smarter Decisions</div>
+</div>
 </div>
 <div class="actions">
 <a class="btn btn-gold" href="#capabilities">
